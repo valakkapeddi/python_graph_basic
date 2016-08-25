@@ -1,0 +1,18 @@
+install graphviz
+install graphviz devel
+
+pip install pygraphviz
+
+import pygraphviz as pgv
+G=pgv.AGraph()
+G.add_node('a')
+G.add_edge('b','c')
+G.write('/var/tmp/whatever.dot')
+
+# expected output
+strict graph {
+        a;
+        b -- c;
+}
+
+dot -Tps <dotfile> -o out.ps
