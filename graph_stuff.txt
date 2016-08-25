@@ -16,3 +16,6 @@ strict graph {
 }
 
 dot -Tps <dotfile> -o out.ps
+
+
+http://pygraphviz.github.io/documentation/pygraphviz-1.3rc1/tutorial.html#start-up
